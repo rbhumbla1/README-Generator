@@ -1,4 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   switch (license) {
@@ -19,7 +19,7 @@ function renderLicenseBadge(license) {
   return badge;
 }
 
-// TODO: Create a function that returns the license link
+// Function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   switch (license) {
@@ -41,7 +41,7 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
+// Function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   let lic = "";
@@ -56,12 +56,14 @@ function renderLicenseSection(license) {
   return lic;
 }
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 function generateMarkdown(data) {
   console.log(data);
 
+  //add title
   let content = `# ${data.title}\n\n`;
 
+  //add license badge
   let badge = renderLicenseBadge(data.license);
   let link = renderLicenseLink(data.license);
   if (link !== '')
@@ -69,11 +71,13 @@ function generateMarkdown(data) {
   else
     content += `${badge}\n\n`;
 
+  //add description section
   let descr = `## Description\n
   ${data.description}\n\n`;
 
   content += descr;
 
+  //add table of content section if user wants
   let toc = "";
 
   if (data.toc === 'yes') {
@@ -88,7 +92,7 @@ function generateMarkdown(data) {
     content += toc;
   }
 
-
+ //add installation section
   let install = `## Installation\n
   To install necessary dependencies, run the following command:
   \`\`\`
@@ -97,20 +101,24 @@ function generateMarkdown(data) {
 
   content += install;
 
+  //add usage section
   let use = `## Usage\n
   ${data.usage}\n\n`;
 
   content += use;
 
+  //add license section
   let lic = renderLicenseSection(data.license);
 
   content += lic;
 
+  //add contributing section
   let contribute = `## Contributing\n
   ${data.contribution}\n`;
 
   content += contribute;
 
+  //add tests section
   let tests = `## Tests\n
   To run tests, please run the following command:
   \`\`\`
@@ -119,11 +127,13 @@ function generateMarkdown(data) {
 
   content += tests;
 
+  //add questions section
   let ques = `## Questions\n
   If you have any questions about the repository and project, or would like to open an issue or would like to contact me for contributing or any other subject, you can do so at ${data.email}. You can welcome to see more ofmy work at ${data.username}. \n\n`;
 
   content += ques;
 
+  //return the content for readme file
   return content;
 
 }
