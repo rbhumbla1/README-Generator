@@ -85,6 +85,7 @@ function generateMarkdown(data) {
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
+  * [Mockup](#mockup)
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)\n\n`;
@@ -103,6 +104,7 @@ function generateMarkdown(data) {
 
   //add usage section
   let use = `## Usage\n
+  GitHub Repository: ${data.repolink}\n
   ${data.usage}\n\n`;
 
   content += use;
@@ -111,6 +113,14 @@ function generateMarkdown(data) {
   let lic = renderLicenseSection(data.license);
 
   content += lic;
+
+  //add Mock up section
+  let mock = `## Mockup
+  * Screenshots of the projects are available here: ${data.sshot}\n\n
+  * Walkthrough Video:\n
+    ![demo](${data.video})\n\n`;
+
+  content += mock;
 
   //add contributing section
   let contribute = `## Contributing\n

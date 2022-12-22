@@ -3,11 +3,19 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
+//filename global constant
+const fileName = `README.md`;
+
 // An array of questions for user input
 const questions = [
     {
         type: 'input',
-        message: 'Please provie your Github uername:',
+        message: 'Please provide your GitHub repository link:',
+        name: 'repolink',
+    },
+    {
+        type: 'input',
+        message: 'Please provide your GitHub username:',
         name: 'username',
     },
     {
@@ -43,6 +51,12 @@ const questions = [
         name: 'usage',
     },
     {
+        type: 'list',
+        message: 'Please provide the license used:',
+        name: 'license',
+        choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3-Clause', 'None'],
+    },
+    {
         type: 'input',
         message: 'Please provide contribution guidelines:',
         name: 'contribution',
@@ -54,14 +68,17 @@ const questions = [
         default: 'npm test',
     },
     {
-        type: 'list',
-        message: 'Please provide the license used:',
-        name: 'license',
-        choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3-Clause', 'None'],
+        type: 'input',
+        message: 'Please provide full pathname to screenshot of your application:',
+        name: 'sshot',
+    },
+    {
+        type: 'input',
+        message: 'Please provide full pathname to your Walkthrough Video:',
+        name: 'video',
     },
 ]
 
-const fileName = `README.md`;
 
 // Function to write README file
 function writeToFile(data) {

@@ -1,16 +1,17 @@
-# sfk;s
+# REAMDME Generator
 
-[![GitHub License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![GitHub License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-  sd;ks
+  sjd;lska;
 
 ## Table of Contents
 
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
+  * [Mock Up](#mockup)
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
@@ -24,15 +25,25 @@
 
 ## Usage
 
-  sldjs
+  GitHub Repository: https://github.com/rbhumbla1/README-Generator
+
+  sds
 
 ## License
 
-  This project is licensed under Apache 2.0 license.
+  This project is licensed under MIT license.
+
+## Mock Up
+  * Screenshots of the projects are available here: ./assets/images
+
+
+  * Walkthrough Video:
+
+    ![demo](./assets/images/demo.gif)
 
 ## Contributing
 
-  lsjd
+  contact me
 ## Tests
 
   To run tests, please run the following command:
@@ -42,5 +53,5 @@
 
 ## Questions
 
-  If you have any questions about the repository and project, or would like to open an issue or would like to contact me for contributing or any other subject, you can do so at dfk;dk. You can welcome to see more ofmy work at df;kd. 
+  If you have any questions about the repository and project, or would like to open an issue or would like to contact me for contributing or any other subject, you can do so at rima.bhumbla@gmail.com. You can welcome to see more ofmy work at rbhumbla1. 
 
