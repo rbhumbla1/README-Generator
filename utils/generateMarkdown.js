@@ -104,7 +104,7 @@ function generateMarkdown(data) {
 
   //add usage section
   let use = `## Usage\n
-  GitHub Repository: ${data.repolink}\n
+  GitHub Repository: https://github.com/${data.username}/${data.repo}\n
   ${data.usage}\n\n`;
 
   content += use;
@@ -116,9 +116,9 @@ function generateMarkdown(data) {
 
   //add Mock up section
   let mock = `## Mockup
-  * Screenshots of the projects are available here: ${data.sshot}\n\n
+  * Screenshots of the projects are available here: ./assets/images/Screenshot.JPEG\n\n
   * Walkthrough Video:\n
-    ![demo](${data.video})\n\n`;
+    ![demo](./assets/images/README-Generator.GIF)\n\n`;
 
   content += mock;
 
@@ -139,7 +139,7 @@ function generateMarkdown(data) {
 
   //add questions section
   let ques = `## Questions\n
-  If you have any questions about the repository and project, or would like to open an issue or would like to contact me for contributing or any other subject, you can do so at ${data.email}. You can welcome to see more ofmy work at ${data.username}. \n\n`;
+  If you have any questions about the repository and project, or would like to open an issue or would like to contact me for contributing or any other subject, you can do so at ${data.email}. You can welcome to see more of my work at https://github.com/${data.username}. \n\n`;
 
   content += ques;
 

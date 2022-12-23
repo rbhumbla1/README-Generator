@@ -4,19 +4,19 @@ const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 //filename global constant
-const fileName = `README.md`;
+const fileName = `./README.md`;
 
 // An array of questions for user input
 const questions = [
     {
         type: 'input',
-        message: 'Please provide your GitHub repository link:',
-        name: 'repolink',
+        message: 'Please provide your GitHub username:',
+        name: 'username',
     },
     {
         type: 'input',
-        message: 'Please provide your GitHub username:',
-        name: 'username',
+        message: 'Please provide name of your GitHub repository:',
+        name: 'repo',
     },
     {
         type: 'input',
@@ -66,16 +66,6 @@ const questions = [
         message: 'Please provide tests instructions:',
         name: 'tests',
         default: 'npm test',
-    },
-    {
-        type: 'input',
-        message: 'Please provide full pathname to screenshot of your application:',
-        name: 'sshot',
-    },
-    {
-        type: 'input',
-        message: 'Please provide full pathname to your Walkthrough Video:',
-        name: 'video',
     },
 ]
 
