@@ -114,11 +114,11 @@ function generateMarkdown(data) {
 
   content += lic;
 
-  //add Mock up section
+  //add Mock up section 
   let mock = `## Mockup
   * Screenshots of the projects are available here: ./assets/images/Screenshot.JPEG\n\n
   * Walkthrough Video:\n
-    ![demo](./assets/images/README-Generator.GIF)\n\n`;
+    ![demo](./assets/images/README-Generator.MP4)\n\n`;
 
   content += mock;
 
