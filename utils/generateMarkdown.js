@@ -116,9 +116,8 @@ function generateMarkdown(data) {
 
   //add Mock up section 
   let mock = `## Mockup
-  * Screenshots of the projects are available here: ./assets/images/Screenshot.JPEG\n\n
-  * Walkthrough Video:\n
-    ![demo](./assets/images/README-Generator.MP4)\n\n`;
+  * Screenshot of the projects is available here: ./assets/images/Screenshot.JPEG\n\n
+  * Walkthrough Video of the project is available here: ./assets/images/README-Generator.mp4\n\n`;
 
   content += mock;
 
