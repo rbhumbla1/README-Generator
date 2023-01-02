@@ -28,8 +28,9 @@ the user's email address with instructions on how to reach them with additional 
 
 ![Screenshot](./assets/images/Screenshot.JPEG)
 
-Demo of the project:
-![Demo](./assets/images/README-Generator.mp4)
+Demo of the project:./assets/images/README-Generator.mp4 or https://drive.google.com/drive/u/0/folders/18mO2uMToFZH8J3mHR10bD3oF-PrAZ99h
+
+Sample README.md generated: ./README_Sample.md
 
 
 ## Usage
