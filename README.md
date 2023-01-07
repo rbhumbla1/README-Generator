@@ -2,7 +2,7 @@
 Repository for a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
 
 ## Description
-README Generator is a comand line Node.js program that will generate a README file based on professional README guidelines and user input.  Here are the features of this program:
+README Generator is a command line Node.js program that will generate a README file based on professional README guidelines and user input.  Here are the features of this program:
 
 1. On the terminal command line, run the application using theocmmand "node index.js".  This will ask a series of question fro the user to pupolate the README file.
 2. The user is prompted for the followinginformation: 
